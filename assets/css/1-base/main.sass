@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:200,400,500')
+
+@keyframes wiggle
+  0%
+    transform: translateX(350px)
+
+  10%
+    transform: translateX(310px)
+
+  20%
+    transform: translateX(350px)
+  100%
+    transform: translateX(350px)
+
+@keyframes fade
+  0%
+    opacity: .4
+  50%
+    opacity: .8
+  100%
+    opacity: .4
+
+html, body
+  margin: 0
+  padding: 0
+
+body
+  height: 100%
+  width: 100%
+  font-family: 'Open Sans', sans-serif
+
+hr
+  width: 80%
+  margin: 2rem auto 4rem
+  opacity: .5
+
+.main-wrapper
+  .main-title
+    font:
+      family: 'Impact', sans-serif
+      size: 4rem
+    color: white
+    opacity: .8
+    margin: 1rem
+    letter-spacing: .4rem
+
+  @media(min-width: 921px)
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 2rem 0 0
+  .video 
+    margin: 1rem auto 0
+    overflow: hidden
+    position: relative
+    width: 100%
+    max-width: 875px
+
+
+  .video::after 
+      padding-top: 56.25%
+      display: block
+      content: ''
+  
+
+  .video iframe 
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+  
+  
+
+.bg-img
+  position: fixed
+  width: 200%
+  height: 200%
+  top: -60%
+  left: -50%
+  z-index: -1
+  img
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    //width: 100%
+    min-width: 50%
+    min-height: 50%
+
+
+.main-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin: 1rem auto
+
+  .cover-container
+    z-index: 2
+    .cover
+      background:
+        image: url('../img/Eugene Delta Balada_cover_800n.jpg')
+        size: contain
+        repeat: no-repeat
+      border: 2px solid #222
+
+
+
+      .play-button
+        display: none
+
+
+
+  @media(max-width: 920px)
+    flex-direction: column
+    box-shadow: 0 0 5px rgba(white, .5)
+    width: 310px
+
+    .cover-container
+      margin-right: 0
+
+      .album-info
+        display: none
+      .cover
+        position: relative
+        width: 306px
+        height: 306px
+        border: 2px solid #222
+
+
+        .play-button
+          position: absolute
+          top: 0
+          width: 100%
+          height: 100%
+          display: flex
+          align-items: center
+          justify-content: center
+          img
+            width: 50px
+            height: 50px
+
+          &.hidden
+            width: 0
+            height: 0
+            display: none
+            img
+              display: none
+
+        .preview-box.mobile
+          width: 306px
+          height: 306px
+          //transform: translateY(-320px)
+          opacity: 0
+          transition: opacity 200ms ease-in-out
+
+          &.fadeIn
+            opacity: 1
+            //transform: translateY(0)
+        .desktop
+          display: none
+
+  @media(min-width: 921px)
+
+
+    .cover-container
+      margin-right: 2rem
+      z-index: 1
+
+      .album-info
+        position: absolute
+        color: #ddd
+        width: 320px
+        text-align: right
+        h1
+          font-size: 1.2rem
+        p
+          font-size: .9rem
+          font-weight: 300
+
+        .cta
+          margin-top: 1rem
+          width: 80%
+          opacity: .8
+          animation: fade 3s ease-in-out infinite
+      .cover
+        width: 526px
+        height: 526px
+        // transform: translate(350px, 0)
+        // transition: transform 700ms ease-in-out
+        // will-change: transform
+
+        .preview-box.desktop
+          width: 100%
+          height: 100%
+          opacity: 0
+
+        .mobile
+          display: none
+    //animation: wiggle 4s ease-in-out 3s infinite
+
+
+    .content-container
+      //transform: translate(-350px, 0)
+      //opacity: 0
+      //transition: all 200ms ease-in-out
+
+
+      .album-info-mobile
+        display: none
+
+    &:hover
+      .cover-container .cover
+        //animation-duration: 0s
+        // transform: translate(0, 0)
+        .preview-box.desktop
+          opacity: 1
+
+      //.content-container
+      //  transform: translate(0, 0)
+      //  //opacity: 1
+
+  .content-container
+
+    .title-container
+      background: #181818
+      color: white
+      padding: .3rem .6rem
+      width: 310px
+      box-sizing: border-box
+      text-align: center
+
+      h1
+        font-size: 1.1rem
+
+      h2
+        font:
+          size: .9rem
+          weight: 200
+
+    .link-container
+      .link-list
+        .link
+
+
+          a
+            //height: 40px
+            padding: 1rem 1rem
+            background: #eee
+            border-bottom: 1px solid #aaa
+
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            text-decoration: none
+            color: #111
+
+            transition: all 200ms ease-in-out
+
+            &:hover
+              background: #ddd
+              & > .button
+                background: #181818
+                color: #fff
+
+            img
+              height: 40px
+
+            .button
+              //display: inline-block
+              border: 1px solid #999
+              border-radius: 4px
+              padding: .4rem .8rem
+              transition: all 200ms ease-in-out
+
+    .album-info-mobile
+      padding: 1rem
+      color: #fff
+      background: rgba(black, .3)
+      h1, p
+        margin: 0
+        padding: .4rem 0
+

@@ -1,0 +1,83 @@
+.section#videos
+  margin-top: 1rem
+  .container
+    margin: 1rem auto
+    padding: 1rem 0 .2rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    max-width: 800px
+
+    @media (max-width: 701px)
+      padding-top: .2rem
+
+    .title-bar
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+
+      .video-title
+        font:
+          family: "DIN Alternate", sans-serif
+          size: 2rem
+        color: #ccc
+        @media (max-width: 701px)
+          font-size: 1.4rem
+        @media (max-width: 420px)
+          font-size: 1.2rem
+      .video-subtitle-txt
+        font:
+          family: Bauhaus, sans-serif
+          size: 3.4rem
+        margin: 0 1rem
+        @media (max-width: 701px)
+          font-size: 2rem
+        @media (max-width: 420px)
+          font-size: 1.6rem
+          margin: 0 .2rem
+
+      .video-subtitle-img
+        width: auto
+        @media (max-width: 701px)
+          width: 60vw
+
+        img
+          width: 100%
+
+    .video-container
+      width: 99%
+      position: relative
+      padding-bottom: 56.25% /* 16:9 */
+      padding-top: 25px
+      height: 0
+
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+  .extender
+    color: #bbb
+    font-size: 2rem
+    text-align: center
+    border: 2px solid transparent
+    cursor: pointer
+    //display: inline-block
+    margin: .4rem auto
+    padding: .5rem 1rem
+    transition: border-color 200ms ease-in-out
+
+    @media(max-width: 420px)
+      font-size: 1.4rem
+
+    &:hover
+      border-color: #888
+
+  #more-videos
+    display: none
+    &.visible
+      display: block

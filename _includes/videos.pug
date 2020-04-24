@@ -1,0 +1,24 @@
+mixin video-wrapper(title, subtitle, imgortxt, backcolor, videolink)
+  .container(style='background: '+ backcolor)
+    .title-bar
+      span.video-title= title
+
+      if(imgortxt=='text')
+        p.video-subtitle-txt= subtitle
+
+      if(imgortxt == 'img')
+        .video-subtitle-img
+          img(src= 'assets/img/' + subtitle)
+
+    .video-container
+      iframe(width="560", height="315", src= videolink, frameborder="0", allowfullscreen="")
+
+.section#videos
+  hr
+  +video-wrapper("", "Bridges Burn", "text", "#530706", "https://www.youtube.com/embed/S41TYMdkLpc?rel=0&amp;showinfo=0" )
+  p(onclick="document.getElementById('more-videos').className += 'visible'; this.style='display: none';").extender click for more videos ...
+
+  #more-videos
+    +video-wrapper("", "Yesterday's Dream", "text", "#16343A", "https://www.youtube.com/embed/2hb_lzI4NBU?rel=0&amp;showinfo=0" )
+    +video-wrapper("LIVE AT B72 VIENNA:", "BLACK DOGS", "text", "#43293E", "https://www.youtube.com/embed/YK_djMRpBKQ?rel=0&amp;showinfo=0" )
+    +video-wrapper("OFFICIAL VIDEO:", "SO LONG", "text", "#2A2943", "https://www.youtube.com/embed/Tcv7og-3cig?rel=0&amp;showinfo=0" )
