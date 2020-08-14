@@ -27,16 +27,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/_includes/head.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_includes/head.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/_includes/main.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -421,18 +411,10 @@
 		"oA": 0,
 		"oAP": "/favicon.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/index.html",
-		"oF": 0
 		},
 	"/index.pug": {
 		"cB": 0,
