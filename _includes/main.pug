@@ -1,25 +1,23 @@
 .bg-img
-  img(src='/assets/img/back_blur2.jpg')
+  img(src='/assets/img/Eugene Delta - Bad Jazz Cover _blur.jpg')
 
 .main-wrapper
   h1.main-title EUGENE DELTA
   .main-container
     .cover-container
-      //- .album-info
-      //-   h1 Eugene Delta - Balada Of A Rainy Fall
-        
-      //-   img(src='/assets/img/CTA2.png').cta
+     
       .cover
 
-        iframe(scrolling='no', frameborder='0', allowtransparency='true', src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=306&height=306&color=ff0000&layout=dark&size=medium&type=tracks&id=933389702&app_id=1', width=306, height=306)#dz-root.preview-box.mobile
-        iframe(scrolling='no', frameborder='0', allowtransparency='true', src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=526&height=526&color=ff0000&layout=dark&size=big&type=tracks&id=933389702&app_id=1', width=526, height=526).preview-box.desktop
+        iframe(allow="encrypted-media *;", frameborder="0", height="306", style="width:100%;max-width:660px;overflow:hidden;background:transparent;", src="https://embed.music.apple.com/us/album/bad-jazz-single/1523349626")#dz-root.preview-box.mobile
+        iframe(allow="encrypted-media *;", frameborder="0", height="526", style="width:100%;max-width:660px;overflow:hidden;background:transparent;", src="https://embed.music.apple.com/us/album/bad-jazz-single/1523349626").preview-box.desktop
         .play-button(onclick="javascript:document.getElementById('dz-root').className += ' fadeIn';this.className += ' hidden';")
           img(src='/assets/img/playPreview.png')
+          //- <iframe ></iframe>
     .content-container
 
       .title-container
         h2 Eugene Delta
-        h1 Balada Of A Rainy Fall
+        h1 Bad Jazz
       .link-wrapper
         .link-container
           .link-list
@@ -28,28 +26,32 @@
             //-     img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_itunes.svg')
             //-     span.button Download
             .link
-              a(href='https://music.apple.com/us/album/balada-of-a-rainy-fall-single/1509481801').applemusic
+              a(href='https://music.apple.com/us/album/bad-jazz-single/1523349626').applemusic
                 img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_applemusic.svg')
                 span.button Play
             .link
-              a(href='https://open.spotify.com/album/00N9TUpVR96AjHN053wogH').spotify
+              a(href='https://open.spotify.com/track/3KVhNbs0BSreJlkg18ECUq').spotify
                 img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_spotify.svg')
                 span.button Play
             .link
-              a(href='https://play.google.com/music/m/T42aze3st3yk3fukze3ebaztooe?t=Balada_of_a_Rainy_Fall_-_Eugene_Delta').googleplay
-                img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_google-play.svg')
-                span.button Play
-            .link
-              a(href='https://www.amazon.com/Balada-Rainy-Fall-Eugene-Delta/dp/B087758C87').amazon
-                img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_amazonmp3.svg')
-                span.button Download
-            .link
-              a(href='https://www.deezer.com/track/933389702').deezer
+              a(href='https://www.deezer.com/album/160508092').deezer
                 img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_deezer.svg')
                 span.button Play
             .link
-              a(href='https://youtu.be/G3qygLOMGq0').youtube
-                img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_youtube.svg')
+              a(href='https://napster.com/artist/eugene-delta/album/bad-jazz').googleplay
+                img(src='https://services.linkfire.com/logo_napster_onlight.svg')
                 span.button Play
+            .link
+              a(href='https://music.amazon.com/albums/B08CWFTRFP?trackAsin=B08CVVMJNH&ref=dm_sh_3108-57c8-dmcp-6706-e51c0&musicTerritory=US&marketplaceId=ATVPDKIKX0DER').amazon
+                img(src='https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_amazonmp3.svg')
+                span.button Play
+            
+            .link
+              a(href='https://music.youtube.com/watch?v=G0yoG8mViXo').youtube
+                img(src='https://services.linkfire.com/logo_youtubemusic_onlight.svg')
+                span.button Play
+  hr
+  h2 BALADA OF A RAINY FALL
+  
   .video
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/G3qygLOMGq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rHvVfHsE-34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

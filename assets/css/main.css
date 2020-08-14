@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:200,400,500");
+@import url("../fonts/next-art.light.otf");
 @keyframes wiggle {
   0% {
     transform: translateX(350px); }
@@ -32,12 +32,13 @@ hr {
   opacity: .5; }
 
 .main-wrapper .main-title {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Next Art', sans-serif;
   font-size: 4rem;
+  font-weight: 100;
   color: white;
-  opacity: .8;
+  opacity: 1;
   margin: 1rem;
-  letter-spacing: .4rem; }
+  letter-spacing: .2rem; }
 
 @media (min-width: 921px) {
   .main-wrapper {
@@ -91,7 +92,7 @@ hr {
   .main-container .cover-container {
     z-index: 2; }
     .main-container .cover-container .cover {
-      background-image: url("../img/Eugene Delta Balada_cover_800n.jpg");
+      background-image: url("../img/Eugene Delta - Bad Jazz Cover Art_final_800.jpg");
       background-size: contain;
       background-repeat: no-repeat;
       border: 2px solid #222; }
