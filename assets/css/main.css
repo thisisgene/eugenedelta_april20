@@ -24,7 +24,8 @@ html, body {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Next Art', sans-serif;
+  background: #000; }
 
 hr {
   width: 80%;
@@ -73,7 +74,8 @@ hr {
   height: 200%;
   top: -60%;
   left: -50%;
-  z-index: -1; }
+  z-index: -1;
+  opacity: .5; }
   .bg-img img {
     position: absolute;
     top: 0;
@@ -310,7 +312,7 @@ hr {
       justify-content: center;
       align-items: center; }
       .section#videos .container .title-bar .video-title {
-        font-family: "DIN Alternate", sans-serif;
+        font-family: "Next Art", sans-serif;
         font-size: 2rem;
         color: #ccc; }
         @media (max-width: 701px) {
@@ -320,7 +322,7 @@ hr {
           .section#videos .container .title-bar .video-title {
             font-size: 1.2rem; } }
       .section#videos .container .title-bar .video-subtitle-txt {
-        font-family: Bauhaus, sans-serif;
+        font-family: "Next Art", sans-serif;
         font-size: 3.4rem;
         margin: 0 1rem; }
         @media (max-width: 701px) {
