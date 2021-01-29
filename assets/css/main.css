@@ -33,9 +33,9 @@ hr {
   opacity: .5; }
 
 .main-wrapper .main-title {
-  font-family: 'Next Art', sans-serif;
-  font-size: 4rem;
-  font-weight: 100;
+  family: 'Next Art', sans-serif;
+  size: 4rem;
+  weight: 100;
   color: white;
   opacity: 1;
   margin: 1rem;
@@ -70,8 +70,8 @@ hr {
 
 .bg-img {
   position: fixed;
-  width: 200%;
-  height: 200%;
+  width: 200vw;
+  height: 200vh;
   top: -60%;
   left: -50%;
   z-index: -1;
@@ -82,8 +82,8 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    min-width: 50%;
-    min-height: 50%; }
+    min-width: 100%;
+    min-height: 100%; }
 
 .main-container {
   display: flex;
@@ -94,7 +94,7 @@ hr {
   .main-container .cover-container {
     z-index: 2; }
     .main-container .cover-container .cover {
-      background-image: url("../img/Eugene Delta - Bad Jazz Cover Art_final_800.jpg");
+      background-image: url("../img/bloodandgold_cover_800.jpg");
       background-size: contain;
       background-repeat: no-repeat;
       border: 2px solid #222; }
@@ -182,8 +182,8 @@ hr {
     .main-container .content-container .title-container h1 {
       font-size: 1.1rem; }
     .main-container .content-container .title-container h2 {
-      font-size: .9rem;
-      font-weight: 200; }
+      size: .9rem;
+      weight: 200; }
   .main-container .content-container .link-container .link-list .link a {
     padding: 1rem 1rem;
     background: #eee;
@@ -237,9 +237,9 @@ hr {
       .social .sm-link a img {
         width: 30px; }
 
-.section#news {
+#news.section {
   font-family: "DIN Alternate", sans-serif; }
-  .section#news .news-wrapper .news-link {
+  #news.section .news-wrapper .news-link {
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -247,17 +247,17 @@ hr {
     justify-content: center;
     transition: transform 200ms ease-in-out; }
     @media (max-width: 701px) {
-      .section#news .news-wrapper .news-link {
+      #news.section .news-wrapper .news-link {
         display: block; }
-        .section#news .news-wrapper .news-link .img-wrapper {
+        #news.section .news-wrapper .news-link .img-wrapper {
           margin: 2rem auto !important; }
-        .section#news .news-wrapper .news-link .cta-wrapper {
+        #news.section .news-wrapper .news-link .cta-wrapper {
           text-align: center !important; }
-          .section#news .news-wrapper .news-link .cta-wrapper .button {
+          #news.section .news-wrapper .news-link .cta-wrapper .button {
             max-width: 400px;
             margin-left: auto;
             margin-right: auto; } }
-    .section#news .news-wrapper .news-link .img-wrapper {
+    #news.section .news-wrapper .news-link .img-wrapper {
       width: 300px;
       height: 300px;
       border: 2px solid #bbb;
@@ -265,20 +265,20 @@ hr {
       filter: drop-shadow(0 0 0px #00EAFF);
       transition: filter 1400ms ease-in-out; }
       @media (max-width: 361px) {
-        .section#news .news-wrapper .news-link .img-wrapper {
+        #news.section .news-wrapper .news-link .img-wrapper {
           margin: 2rem 0;
           width: 100vw;
           height: 100vw; } }
-      .section#news .news-wrapper .news-link .img-wrapper img {
+      #news.section .news-wrapper .news-link .img-wrapper img {
         width: 100%;
         height: 100%; }
-    .section#news .news-wrapper .news-link .cta-wrapper {
+    #news.section .news-wrapper .news-link .cta-wrapper {
       text-align: left;
       font-size: 3rem; }
-      .section#news .news-wrapper .news-link .cta-wrapper p {
+      #news.section .news-wrapper .news-link .cta-wrapper p {
         color: #eee;
         margin: 0; }
-      .section#news .news-wrapper .news-link .cta-wrapper .button {
+      #news.section .news-wrapper .news-link .cta-wrapper .button {
         margin-top: 2rem;
         padding: .8rem 1.6rem;
         background: transparent;
@@ -288,14 +288,14 @@ hr {
         border-radius: .3rem;
         font-size: 2rem;
         transition: all 400ms ease-in-out; }
-    .section#news .news-wrapper .news-link:hover {
+    #news.section .news-wrapper .news-link:hover {
       transform: scale(1.05); }
-      .section#news .news-wrapper .news-link:hover .img-wrapper {
+      #news.section .news-wrapper .news-link:hover .img-wrapper {
         filter: drop-shadow(0 0 200px #00EAFF); }
 
-.section#videos {
+#videos.section {
   margin-top: 1rem; }
-  .section#videos .container {
+  #videos.section .container {
     margin: 1rem auto;
     padding: 1rem 0 .2rem;
     display: flex;
@@ -304,54 +304,54 @@ hr {
     align-items: center;
     max-width: 800px; }
     @media (max-width: 701px) {
-      .section#videos .container {
+      #videos.section .container {
         padding-top: .2rem; } }
-    .section#videos .container .title-bar {
+    #videos.section .container .title-bar {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .section#videos .container .title-bar .video-title {
+      #videos.section .container .title-bar .video-title {
         font-family: "Next Art", sans-serif;
         font-size: 2rem;
         color: #ccc; }
         @media (max-width: 701px) {
-          .section#videos .container .title-bar .video-title {
+          #videos.section .container .title-bar .video-title {
             font-size: 1.4rem; } }
         @media (max-width: 420px) {
-          .section#videos .container .title-bar .video-title {
+          #videos.section .container .title-bar .video-title {
             font-size: 1.2rem; } }
-      .section#videos .container .title-bar .video-subtitle-txt {
+      #videos.section .container .title-bar .video-subtitle-txt {
         font-family: "Next Art", sans-serif;
         font-size: 3.4rem;
         margin: 0 1rem; }
         @media (max-width: 701px) {
-          .section#videos .container .title-bar .video-subtitle-txt {
+          #videos.section .container .title-bar .video-subtitle-txt {
             font-size: 2rem; } }
         @media (max-width: 420px) {
-          .section#videos .container .title-bar .video-subtitle-txt {
+          #videos.section .container .title-bar .video-subtitle-txt {
             font-size: 1.6rem;
             margin: 0 .2rem; } }
-      .section#videos .container .title-bar .video-subtitle-img {
+      #videos.section .container .title-bar .video-subtitle-img {
         width: auto; }
         @media (max-width: 701px) {
-          .section#videos .container .title-bar .video-subtitle-img {
+          #videos.section .container .title-bar .video-subtitle-img {
             width: 60vw; } }
-        .section#videos .container .title-bar .video-subtitle-img img {
+        #videos.section .container .title-bar .video-subtitle-img img {
           width: 100%; }
-    .section#videos .container .video-container {
+    #videos.section .container .video-container {
       width: 99%;
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 25px;
       height: 0; }
-      .section#videos .container .video-container iframe {
+      #videos.section .container .video-container iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-  .section#videos .extender {
+  #videos.section .extender {
     color: #bbb;
     font-size: 2rem;
     text-align: center;
@@ -361,11 +361,11 @@ hr {
     padding: .5rem 1rem;
     transition: border-color 200ms ease-in-out; }
     @media (max-width: 420px) {
-      .section#videos .extender {
+      #videos.section .extender {
         font-size: 1.4rem; } }
-    .section#videos .extender:hover {
+    #videos.section .extender:hover {
       border-color: #888; }
-  .section#videos #more-videos {
+  #videos.section #more-videos {
     display: none; }
-    .section#videos #more-videos.visible {
+    #videos.section #more-videos.visible {
       display: block; }
